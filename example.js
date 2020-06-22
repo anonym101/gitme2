@@ -4,7 +4,7 @@
 */
 
 GitInstallOne()
-function GitInstallOne(){
+async function GitInstallOne(){
     const GitInstall = require('./index')()
     // GitInstall.exampleRepo << following this setup
     const opts = {
@@ -27,5 +27,6 @@ function GitInstallOne(){
     // git+ssh://git@eaglex_bitbucket:eag1ex/simple-q.git
     // x-units x-dispatcher
     const git = new GitInstall(opts)
-    git.install()
+   await git.install()
+   // ready
 }
