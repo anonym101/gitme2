@@ -1,0 +1,10 @@
+node_modules
+npm-debug.log
+desktop.ini
+gits
+*.env
+*.dev
+.DS_Store
+# Docker
+Dockerfile
+docker-compose.yml

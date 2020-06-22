@@ -1,0 +1,17 @@
+{
+  "name": "git-installer",
+  "version": "1.0.0",
+  "description": "install git repos via script",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "simple-q":"file:deps/simple-q",
+    "x-dispatcher":"file:deps/x-dispatcher",
+    "delete": "^1.1.0",
+    "directory-exists": "^2.0.1"
+  }
+}
