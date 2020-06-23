@@ -1,11 +1,12 @@
 {
-  "name": "gitme",
+  "name": "gitme2",
   "version": "1.0.0",
   "description": "install git repos via script",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "keywords": ["git","git install","repository","github","bitbucket","preinstall","git clone","process.env"],
   "author": "",
   "license": "ISC",
   "dependencies": {

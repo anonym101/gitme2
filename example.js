@@ -16,6 +16,7 @@ async function GitMeOne() {
         gitRepos: {
 
             ['projectName']: {
+                // NOTE you can provide more arguments to `exec`, but install will check for existance of the new project, or will not create a symlink
                 exec: `git clone git@bitbucket.org/authourName/projectName.git`, 
                 folder: `./gits/projectName` 
             },

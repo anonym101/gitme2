@@ -1,5 +1,5 @@
 ### GitMe
-Install your `Git repos` using a script (make sure it includes `package.json` of your project). This Project installs gits from an array and place them in desired dir location. After each installation, `npm link` is performed on each repo so make sure it is an npm package. There after you can add it to your `package.json` for intellisense, example: `"rep-name":"file:gits/rep-name"`, so then `require('rep-name')` will get picked up by your `CLI`
+Install your `Git repos` using a script (make sure it includes `package.json` of your project). This Project installs gits from an array and place them in desired dir location. After each installation, `npm link` is performed on each repo so make sure it is an npm package. There after you can add it to your `package.json` for intellisense, example: `"rep-name":"file:gits/rep-name"`, so then `require('rep-name')` will get picked up by your `CLI`.
 
 
 #### Why use it ?
