@@ -1,2 +1,2 @@
-module.exports = require('./libs/git-installer')
+module.exports = require('./libs/git-me')
 

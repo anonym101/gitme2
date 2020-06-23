@@ -3,30 +3,32 @@
  * few examples, not how to use
 */
 
-GitInstallOne()
-async function GitInstallOne(){
-    const GitInstall = require('./index')()
-    // GitInstall.exampleRepo << following this setup
+GitMeOne()
+async function GitMeOne() {
+    
+    const GitMe = require('./index')()
+
+    /** 
+     * GitMe.exampleRepo << following this setup
+     * recommendations: `do not include your "GitMe installs" in the same dir as your project!, treat it as ./local_node_modules or ./gits`
+    */
     const opts = {
-        gitRepos:{
-            ['simple-q']: { 
-                exec: `git clone git@eaglex_bitbucket:eag1ex/simple-q.git`,  // git execution type
-                folder: `./gits/simple-q` // where to include this repo 
-            },
-            ['x-utils']: {
-                exec: `git clone git@eaglex_bitbucket:eag1ex/x-utils.git`,  // git execution type
-                folder: `./gits/x-units` // where to include this repo 
+        gitRepos: {
+
+            ['projectName']: {
+                exec: `git clone git@bitbucket.org/authourName/projectName.git`, 
+                folder: `./gits/projectName` 
             },
 
-            ['x-dispatcher']: {
-                exec: `git clone git@eaglex_bitbucket:eag1ex/x-dispatcher.git`,  // git execution type
-                folder: `./gits/x-dispatcher` // where to include this repo 
+            ['projectName2']: {
+                exec: `git clone https://github.com/authourName2/projectName2.git`,  
+                folder: `./gits/projectName2` 
             },
+            // and so on
         }
     }
-    // git+ssh://git@eaglex_bitbucket:eag1ex/simple-q.git
-    // x-units x-dispatcher
-    const git = new GitInstall(opts)
-   await git.install()
-   // ready
+
+    const git = new GitMe(opts)
+    const results = await git.install()
+    console.log('GitMe/results',results)
 }

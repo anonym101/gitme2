@@ -1,5 +1,5 @@
 {
-  "name": "git-installer",
+  "name": "gitme",
   "version": "1.0.0",
   "description": "install git repos via script",
   "main": "index.js",
