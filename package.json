@@ -1,5 +1,5 @@
 {
-  "name": "gitme2",
+  "name": "@anon/gitme2",
   "version": "1.0.0",
   "description": "install git repos via script",
   "main": "index.js",
@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": ["git","git install","repository","github","bitbucket","preinstall","git clone","process.env"],
-  "author": "",
+  "author": "anon101",
   "license": "ISC",
   "dependencies": {
     "delete": "^1.1.0",
