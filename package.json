@@ -6,8 +6,15 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "publishConfig": {
+    "registry":"https://npm.pkg.github.com/anonym101"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/anonym101/gitme2"
+  },
   "keywords": ["git","git install","repository","github","bitbucket","preinstall","git clone","process.env"],
-  "author": "anon101",
+  "author": "",
   "license": "ISC",
   "dependencies": {
     "delete": "^1.1.0",
