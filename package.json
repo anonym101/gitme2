@@ -1,5 +1,5 @@
 {
-  "name": "@anon/gitme2",
+  "name": "gitme2",
   "version": "1.0.0",
   "description": "install git repos via script",
   "main": "index.js",
