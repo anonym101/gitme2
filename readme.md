@@ -1,6 +1,9 @@
-### GitMe
+### GitMe2
 Install your `Git repos` using a script (make sure it includes `package.json` of your project). This Project installs gits from an array and place them in desired location. After each installation, `npm link` is performed on each repo so make sure it is an npm package. There after you can add it to your `package.json` for intellisense, example: `"rep-name":"file:gits/rep-name"`, so then `require('rep-name')` will get picked up by your `CLI`.
 
+
+### Install
+- `npm i gitme2`
 
 #### Why use it ?
 - Install private gits
@@ -45,5 +48,7 @@ Install your `Git repos` using a script (make sure it includes `package.json` of
 ```
 
 
+##### Contact
+* Have questions, or would like to submit feedback, `contact on: https://eaglex.net/app/contact?product=gitme2`
 
 
