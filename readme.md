@@ -3,7 +3,10 @@ Install your `Git repos` using a script (make sure it includes `package.json` of
 
 
 ### Install
-- `npm i gitme2`
+```shell
+$ npm i gitme2
+```
+
 
 #### Why use it ?
 - Install private gits
@@ -13,11 +16,11 @@ Install your `Git repos` using a script (make sure it includes `package.json` of
 - Call it on specific `process.env`
 
 #### Examples:
-- more examples avaialble in `example.js`
+- more examples available in `./example.js`
 
 #### Example usage:
 
-```
+```js
 
  const GitMe = require('./index')()
 

@@ -1,8 +1,9 @@
 {
   "name": "gitme2",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "install git repos via script",
   "main": "index.js",
+  
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -23,9 +24,15 @@
   ],
   
   "author": "anon",
-  "license": "ISC",
+  "license": "CC-BY-SA-4.0",
   "dependencies": {
     "delete": "^1.1.0",
     "directory-exists": "^2.0.1"
-  }
+  },
+  "homepage":"https://eaglex.net",
+  "engines":{
+    "node":"*",
+    "npm":"*"
+  },
+  "contributors":[]
 }

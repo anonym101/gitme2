@@ -44,7 +44,7 @@ exports.sq = sq
 
 /** 
  * spawn will install repo, then symlink it to `node_modules/project-name`
- * - to get intelesence add repo name to `package.json`, example :` "project-name":"file:gits/project-name" `
+ * - to get intellisense add repo name to `package.json`, example :` "project-name":"file:gits/project-name" `
 */
 exports.spawnAsync = async ({ command, name, folder }) => {
 
@@ -59,7 +59,7 @@ exports.spawnAsync = async ({ command, name, folder }) => {
                 if (type === 'install') installed.resolve({ success: true, name, folder })
                 if (type === 'link') {
                     const f = folder.replace('./', "")
-                    linked.resolve({ success: true, name, folder, message: `file linked, add:"file:${f}/${name}" to package.json dependancies` })
+                    linked.resolve({ success: true, name, folder, message: `file linked, add:"file:${f}/${name}" to package.json dependencies` })
                 }
             })
             .on('kill', function () {
