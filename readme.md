@@ -1,4 +1,4 @@
-Install your `Git repos` using a script. This app installs gits from an array, then places them in desired location. After each installation, `npm link` is performed on each repo so make sure it is an npm package.  After you can add it to your `package.json` for intellisense _(`"rep-name":"file:gits/rep-name"`)_ and  `require('rep-name')` will get picked up.
+Install `Git repos` using a script. This app installs gits from an array, and places them in desired location. After each installation, `npm link` is performed on a repo so make sure it is an npm package.  After you can add it to your `package.json` for intellisense _(`"rep-name":"file:gits/rep-name"`)_.
 &nbsp;
 &nbsp;
 
@@ -15,11 +15,11 @@ $ npm i gitme2
 
 ### Why use it ?
 * Install private gits
-* Automation of git installations
+* Automation of git installs
 * Not an npm public repo.
 * Add to `preinstall` script
 * Call it on specific `process.env`
-* Npm module wont install? Use the git repo and then npm link it!
+* Npm module wont install? Use the git repo and then npm link it as local!
 &nbsp;
 &nbsp;
 
@@ -65,8 +65,8 @@ More examples in `./example.js`
 
 |METHODS                |RETURN                          |DESCRIPTION                         |
 |----------------|-------------------------------|-----------------------------|
-|install() | `promise` |Start installing gitRepos, and return results after all complete, or return errors |
-|relink() | `promise` |when you already installed your repos and syslink got missing, can you this method to relink them |
+|install() | `promise` |Start installing gitRepos, return results after all complete, or return errors |
+|relink() | `promise` |when already installed, your repos and syslink got missing? You can use it to relink them! |
 &nbsp;
 &nbsp;
 
