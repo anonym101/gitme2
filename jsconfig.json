@@ -12,6 +12,6 @@
   "paths": {
     "*": ["node_modules/*", "types/*"]
   },
-  "include": ["libs","deps/**/*"],
+  "include": ["libs"],
   "exclude": ["node_modules", "tmp"]
 }

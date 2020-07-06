@@ -56,7 +56,7 @@ module.exports = () => {
                 const folder = value.folder.replace("./", "")
                 if (type === 'install') log(`--- installing ${key}`)
                 if (type === 'relink') log(`--- relinking ${key}`)
-                
+
                 try {
                     let assignment
                     if (type === 'install') assignment = spawnAsync

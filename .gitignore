@@ -9,3 +9,4 @@ info.md
 # Docker
 Dockerfile
 docker-compose.yml
+*.ico

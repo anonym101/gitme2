@@ -43,10 +43,9 @@ const sq = function () {
     }
 }
 
-exports.sq = sq
 
 
-const spawnExecute = async ({ command, name, folder },type = 'install', link = null) => {
+const spawnExecute = async ({ command, name, folder }, type = 'install', link = null) => {
     const installed = sq()
     const linked = sq()
     const cmd = link ? `${link} ${folder}` : command
@@ -84,7 +83,7 @@ const spawnExecute = async ({ command, name, folder },type = 'install', link = n
 exports.spawnLink = async ({ command, name, folder }) => {
     try {
         let link
-        if ((link = await spawnExecute({ command, name, folder },'link', `npm link`) ) && !link.success) throw (`link error for: ${link.name}`)
+        if ((link = await spawnExecute({ command, name, folder }, 'link', `npm link`)) && !link.success) throw (`link error for: ${link.name}`)
 
         if (!await directoryExists(link.folder)) throw (`doesnt exist, or invalid repo for: ${link.name}, check your "exec"`)
         return link
@@ -102,8 +101,8 @@ exports.spawnAsync = async ({ command, name, folder }) => {
 
     try {
         let install
-        if ((install = await spawnExecute({ command, name, folder },'install')) && !install.success) throw (`install error for: ${install.name}`)
-        const link = await spawnExecute({ command, name, folder },'link', `npm link`) // wait for link, per each install
+        if ((install = await spawnExecute({ command, name, folder }, 'install')) && !install.success) throw (`install error for: ${install.name}`)
+        const link = await spawnExecute({ command, name, folder }, 'link', `npm link`) // wait for link, per each install
 
         if (!await directoryExists(install.folder)) throw (`doesnt exist, or invalid repo for: ${install.name}, check your "exec"`)
         return install
@@ -111,6 +110,8 @@ exports.spawnAsync = async ({ command, name, folder }) => {
         return Promise.reject({ error })
     }
 }
+
+exports.sq = sq
 
 exports.ondelete = async (name) => {
     if (!name) throw ('must specify name to delete')
