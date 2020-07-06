@@ -14,6 +14,7 @@ $ npm i gitme2
 - Not an npm public repo.
 - Add to `preinstall` script
 - Call it on specific `process.env`
+- Npm module wont install? Use the git repo and then npm link it!
 
 #### Examples:
 - more examples available in `./example.js`
