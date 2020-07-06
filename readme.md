@@ -3,6 +3,7 @@ Install your `Git repos` using a script. This app installs gits from an array, t
 &nbsp;
 
 
+
 ### Install
 ```shell
 $ npm i gitme2
@@ -11,13 +12,14 @@ $ npm i gitme2
 &nbsp;
 
 
+
 #### Why use it ?
-- Install private gits
-- Automation of git installations
-- Not an npm public repo.
-- Add to `preinstall` script
-- Call it on specific `process.env`
-- Npm module wont install? Use the git repo and then npm link it!
+* Install private gits
+* Automation of git installations
+* Not an npm public repo.
+* Add to `preinstall` script
+* Call it on specific `process.env`
+* Npm module wont install? Use the git repo and then npm link it!
 &nbsp;
 &nbsp;
 
@@ -59,7 +61,7 @@ More examples in `./example.js`
 
 
 
-### Methods
+### API
 
 |METHODS                |RETURN                          |DESCRIPTION                         |
 |----------------|-------------------------------|-----------------------------|
@@ -72,6 +74,6 @@ More examples in `./example.js`
 
 
 ##### Contact
-* Have questions, or would like to submit feedback, [contact eaglex](https://eaglex.net/app/contact?product=gitme2)
+Have questions, or would like to submit feedback, [contact eaglex](https://eaglex.net/app/contact?product=gitme2)
 
 
