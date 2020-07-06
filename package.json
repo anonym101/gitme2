@@ -1,6 +1,6 @@
 {
   "name": "gitme2",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "install git repos via script",
   "main": "index.js",
   
@@ -14,6 +14,7 @@
   },
   "keywords": [
     "git",
+    "npm link",
     "npm install issues",
     "git install",
     "repository",

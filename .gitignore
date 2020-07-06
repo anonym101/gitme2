@@ -5,6 +5,7 @@ gits
 *.env
 *.dev
 .DS_Store
+info.md
 # Docker
 Dockerfile
 docker-compose.yml

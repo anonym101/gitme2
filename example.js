@@ -1,8 +1,7 @@
 
 /** 
- * few examples, not how to use
+ * few examples
 */
-
 GitMeOne()
 async function GitMeOne() {
     
@@ -16,20 +15,20 @@ async function GitMeOne() {
         gitRepos: {
 
             ['projectName']: {
-                // NOTE you can provide more arguments to `exec`, but install will check for existance of the new project, or will not create a symlink
                 exec: `git clone git@bitbucket.org/authourName/projectName.git`, 
                 folder: `./gits/projectName` 
             },
 
             ['projectName2']: {
-                exec: `git clone https://github.com/authourName2/projectName2.git`,  
+                exec: `git clone https://github.com/authourName/projectName2.git`,  
                 folder: `./gits/projectName2` 
-            },
+            }
             // and so on
         }
     }
 
     const git = new GitMe(opts)
-    const results = await git.install()
+   // const results = await git.install()
+   // const relink  = await git.relink() //NOTE if you want to relink existing repos 
     console.log('GitMe/results',results)
 }

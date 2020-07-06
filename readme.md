@@ -1,11 +1,14 @@
-### GitMe2
-Install your `Git repos` using a script (make sure it includes `package.json` of your project). This Project installs gits from an array and place them in desired location. After each installation, `npm link` is performed on each repo so make sure it is an npm package. There after you can add it to your `package.json` for intellisense, example: `"rep-name":"file:gits/rep-name"`, so then `require('rep-name')` will get picked up by your `CLI`.
+Install your `Git repos` using a script. This app installs gits from an array, then places them in desired location. After each installation, `npm link` is performed on each repo so make sure it is an npm package.  After you can add it to your `package.json` for intellisense _(`"rep-name":"file:gits/rep-name"`)_ and  `require('rep-name')` will get picked up.
+&nbsp;
+&nbsp;
 
 
 ### Install
 ```shell
 $ npm i gitme2
 ```
+&nbsp;
+&nbsp;
 
 
 #### Why use it ?
@@ -15,19 +18,20 @@ $ npm i gitme2
 - Add to `preinstall` script
 - Call it on specific `process.env`
 - Npm module wont install? Use the git repo and then npm link it!
+&nbsp;
+&nbsp;
 
-#### Examples:
-- more examples available in `./example.js`
+
 
 #### Example usage:
+More examples in `./example.js`
 
 ```js
-
- const GitMe = require('./index')()
+ const GitMe = require('gitme2')()
 
     /** 
      * GitMe.exampleRepo << following this setup
-     * recommendations: `do not include your "GitMe installs" in the same dir as your project!, treat it as ./local_node_modules or ./gits`
+     * recommendations: `do not include your "GitMe installs" in the same dir as your project!, treat it as ./local_node_modules or ./gits` for example.
     */
     const opts = {
         gitRepos: {
@@ -48,11 +52,26 @@ $ npm i gitme2
 
     const git = new GitMe(opts)
     const results = await git.install()
-
+    // const relinked = await git.relink() // if npm syslink got missing, try to relink them 
 ```
+&nbsp;
+&nbsp;
+
+
+
+### Methods
+
+|METHODS                |RETURN                          |DESCRIPTION                         |
+|----------------|-------------------------------|-----------------------------|
+|install() | `promise` |Start installing gitRepos, and return results after all complete, or return errors |
+|relink() | `promise` |when you already installed your repos and syslink got missing, can you this method to relink them |
+&nbsp;
+&nbsp;
+
+
 
 
 ##### Contact
-* Have questions, or would like to submit feedback, `contact on: https://eaglex.net/app/contact?product=gitme2`
+* Have questions, or would like to submit feedback, [contact eaglex](https://eaglex.net/app/contact?product=gitme2)
 
 
