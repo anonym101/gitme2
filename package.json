@@ -3,11 +3,9 @@
   "version": "1.0.3",
   "description": "install git repos via script",
   "main": "index.js",
-  
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-
   "repository": {
     "type": "git",
     "url": "https://github.com/anonym101/gitme2"
@@ -24,17 +22,16 @@
     "git clone",
     "process.env"
   ],
-  
   "author": "anon",
   "license": "CC-BY-SA-4.0",
   "dependencies": {
     "delete": "^1.1.0",
     "directory-exists": "^2.0.1"
   },
-  "homepage":"https://eaglex.net",
-  "engines":{
-    "node":"*",
-    "npm":"*"
+  "homepage": "https://eaglex.net",
+  "engines": {
+    "node": "*",
+    "npm": "*"
   },
-  "contributors":[]
+  "contributors": []
 }
