@@ -13,7 +13,7 @@ $ npm i gitme2
 
 
 
-#### Why use it ?
+### Why use it ?
 * Install private gits
 * Automation of git installations
 * Not an npm public repo.
@@ -25,7 +25,7 @@ $ npm i gitme2
 
 
 
-#### Example usage:
+### Example usage:
 More examples in `./example.js`
 
 ```js
@@ -73,7 +73,7 @@ More examples in `./example.js`
 
 
 
-##### Contact
+### Contact
 Have questions, or would like to submit feedback, [contact eaglex](https://eaglex.net/app/contact?product=gitme2)
 
 
